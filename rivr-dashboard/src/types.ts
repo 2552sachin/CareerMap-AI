@@ -1,0 +1,1 @@
+export type ToolId = 'analyzer' | 'letters' | 'interview' | 'builder' | 'copilot' | 'salary' | 'tracker' | 'compare' | 'docs'

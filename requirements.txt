@@ -1,0 +1,11 @@
+streamlit
+requests
+pdfplumber
+pandas
+plotly
+beautifulsoup4
+python-docx
+fpdf2
+fastapi
+uvicorn[standard]
+olefile
