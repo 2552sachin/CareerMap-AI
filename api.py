@@ -22,9 +22,18 @@ from export import text_to_docx, text_to_pdf, analysis_to_docx, analysis_to_pdf
 
 app = FastAPI(title="AI Career Suite API", version="1.0.0")
 
+import os
+
+_FRONTEND_ORIGINS = [
+    "http://localhost:5173",       # Vite dev server
+    "http://localhost:4173",       # Vite preview
+    "http://127.0.0.1:5173",
+    os.getenv("FRONTEND_URL", ""),  # Vercel production URL  (e.g. https://careermapai.vercel.app)
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:4173", "http://127.0.0.1:5173"],
+    allow_origins=[o for o in _FRONTEND_ORIGINS if o],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

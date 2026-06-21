@@ -1,0 +1,26 @@
+# Render deployment config for the CareerMap AI FastAPI backend.
+# Docs: https://render.com/docs/blueprint-spec
+#
+# Deploy:
+#   1. Go to https://dashboard.render.com → New → Web Service → connect your GitHub
+#   2. Pick the repo: 2552sachin/CareerMap-AI
+#   3. Render reads this file automatically.
+
+services:
+  - type: web
+    name: careermap-api
+    runtime: python
+    # Only deploy the backend files — keeps build lean and avoids pulling the
+    # React dashboard's node_modules.
+    rootDir: .
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      # Set this to your Vercel frontend URL after the frontend is deployed,
+      # e.g. https://careermapai.vercel.app  (NO trailing slash)
+      - key: FRONTEND_URL
+        sync: false
