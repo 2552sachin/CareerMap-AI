@@ -387,8 +387,8 @@ See [`LICENSE`](LICENSE) for more information.
 **Sachin Chaudhary**
 
 <p>
-  <a href="https://github.com/2552sachin"><img src="https://img.shields.io/badge/GitHub-2552sachin-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="https://www.linkedin.com/in/sachin002552/"><img src="https://img.shields.io/badge/LinkedIn-sachin002552-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/2552sachin" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/sachin002552/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 </p>
 
 *If CareerMap AI helped you land an interview or a job, consider ⭐ starring this repo — it helps others find it too.*
